@@ -1,12 +1,12 @@
 #nav-bar {
-  float: left;
-  position: fixed;
-  top: 0;
-  height: 80px;
-  width: 100%;
   background: #00a087;
   color: #e8fdff;
+  float: left;
+  height: 80px;
   padding: 0 2em 0 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #nav-bar .header {
@@ -16,8 +16,8 @@
 }
 
 #nav-bar .logo {
+  float: left;
   height: 80px;
   width: 80px;
-  float: left;
 }
 
