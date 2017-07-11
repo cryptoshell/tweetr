@@ -33,9 +33,9 @@
 }
 
 .new-tweet .counter {
+  bottom: 5px;
   font-size: 80%;
   font-style: italic;
-  bottom: 5px;
   padding: 0 5px;
   position: absolute;
   right: 10px;
