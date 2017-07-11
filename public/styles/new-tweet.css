@@ -1,0 +1,42 @@
+.new-tweet {
+  background: #eee;
+  border-radius: 5px;
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 2em;
+  right: 2em;
+  height: 150px;
+  margin-top: -80px;
+  padding: 0 10px 0 10px;
+  z-index: 2;
+}
+
+.new-tweet h2 {
+  border-bottom: 1.5px solid;
+  margin: 9px 0 18px 0;
+}
+
+.new-tweet input {
+  font-size: 80%;
+  line-height: 1em;
+  height: 21px;
+  width: 50px;
+  background: #eee;
+  position: absolute;
+  padding: 0 6px 0 6px;
+}
+
+.new-tweet textarea {
+  height: 50px;
+  width: 100%;
+}
+
+.new-tweet .counter {
+  padding: 0 5px;
+  bottom: 5px;
+  position: absolute;
+  font-style: italic;
+  font-size: 80%;
+  right: 10px;
+}
