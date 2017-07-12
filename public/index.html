@@ -6,8 +6,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -23,30 +23,23 @@
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <input id="compose-button" type="submit" value="&#9997 Compose"> 
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
+        <form method="POST" action="/tweets/" id="make-tweet">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input id="submit-new-tweet" type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
-        <section id="tweet">
-          <header>
-          <img src="https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjesK7y24LVAhUS1mMKHW4GA-IQjRwIBw&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F127086020713247253%2F&psig=AFQjCNHAheM1CkcFmbYdD6BJis8SQ4x3Yg&ust=1499913646624158">
-          <h3>Bill Fields</h3>
-          <p>@MrFields</p>
-          </header>
-          <article>Little tweet here</article>
-          <footer>10 days ago</footer>
+        <section id="tweet-container">
         </section>
       </section>
     </main>
