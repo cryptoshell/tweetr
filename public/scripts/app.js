@@ -67,7 +67,7 @@ $(document).ready(() => {
   loadTweets();
 
   $('button').click(function () {
-    $('#text-field').slideToggle("slow");
+    $('#text-field').toggle("slow");
     $('#text-field textarea').select();
   });
 
