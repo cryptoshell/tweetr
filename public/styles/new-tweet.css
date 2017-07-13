@@ -1,5 +1,5 @@
 .new-tweet {
-  background: #eee;
+  background: #CBAF92;
   border-radius: 5px;
   height: 142px;
   left: 2em;
@@ -9,6 +9,10 @@
   right: 2em;
   top: 130px;
   width: 386px;
+}
+
+#text-field {
+  display:none;
 }
 
 .new-tweet h2 {
@@ -80,7 +84,6 @@
 #footer span {
   float: left;
 }
-
 
 #tweet-header {
   background: #eee;

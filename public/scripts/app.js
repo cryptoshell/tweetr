@@ -9,7 +9,7 @@ $(document).ready(() => {
 
   function createTweetElement(tweet) {
     let $tweet = `
-      <section id="tweet">
+      <article id="tweet">
         <header id="tweet-header">
           <img src=${escape(tweet.user.avatars.small)}>
           <h3>${escape(tweet.user.name)}</h3>
@@ -24,7 +24,7 @@ $(document).ready(() => {
           </span>
           <span>${escape(tweet.created_at)}</span>
         </footer>
-      </section>
+      </article>
       `
     return $tweet;
   }
@@ -56,10 +56,19 @@ $(document).ready(() => {
       })
       .done (()=> {
         loadTweets();
+        $('textarea').val('');
+        setTimeout(function () { alert("Your tweet has been posted successfully!");}, 400);
       })
     }
   }
 
+
   $('#make-tweet').on('submit', handleNewTweet);
   loadTweets();
+
+  $('button').click(function () {
+    $('#text-field').slideToggle("slow");
+    $('#text-field textarea').select();
+  });
+
 });

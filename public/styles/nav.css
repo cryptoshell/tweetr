@@ -22,10 +22,11 @@
   width: 80px;
 }
 
-#compose-button {
-  background: white;
+button {
+  background: #eefffc;
   border: 1px solid black;
   border-radius: 10%;
+  color: #00a087;
   float: right;
   font-size: 117%;
   height: 58px;
@@ -34,7 +35,6 @@
   width: 110px;
 }
 
-#compose-button:hover {
-  background-color: #eefffc;
-  color: #00a087;
+button:hover {
+  background-color: white;
 }
