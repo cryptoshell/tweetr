@@ -31,7 +31,7 @@ $(document).ready(() => {
 
   function renderTweets(tweets) {
     tweets.forEach(function(tweet) {
-        $('#tweet-container').prepend(createTweetElement(tweet));
+        $('.tweet-container').prepend(createTweetElement(tweet));
     });
   }
 
@@ -45,7 +45,7 @@ $(document).ready(() => {
   function handleNewTweet(event) {
     event.preventDefault();
     if ($('textarea').val().length > 140) {
-      alert("Your tweet surpassed the maximum length!");
+      alert("Your tweet has surpassed the maximum length!");
     } else if ($('textarea').val().length === 0) {
       alert("Your tweet cannot be empty!");
     } else {
@@ -67,8 +67,8 @@ $(document).ready(() => {
   loadTweets();
 
   $('button').click(function () {
-    $('#text-field').toggle("slow");
-    $('#text-field textarea').select();
+    $('.new-tweet').toggle("slow");
+    $('.new-tweet textarea').select();
   });
 
 });
