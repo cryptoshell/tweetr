@@ -7,22 +7,33 @@ $(document).ready(() => {
     return div.innerHTML;
   }
 
+  function timeCalculator(time) {
+    let passedTime = Date.now() - time;
+    if (passedTime < 3600000) {
+      return(Math.ceil(passedTime/60000 - 3) + " mins ago");
+    } else if (passedTime < 86400000) {
+      return (Math.ceil(passedTime / 3600000) + " hrs ago");
+    } else {
+      return (Math.ceil(passedTime/86400000) + " days ago");
+    }
+  }
+
   function createTweetElement(tweet) {
     let $tweet = `
-      <article id="tweet">
-        <header id="tweet-header">
+      <article class="tweet">
+        <header>
           <img src=${escape(tweet.user.avatars.small)}>
           <h3>${escape(tweet.user.name)}</h3>
           <p>${escape(tweet.user.handle)}</p>
           </header>
           <article>${escape(tweet.content.text)}</article>
-        <footer class="footer">
+        <footer>
           <span class="icons">
           <i class="fa fa-flag" aria-hidden="true"></i>
           <i class="fa fa-retweet" aria-hidden="true"></i>
           <i class="fa fa-heart" aria-hidden="true"></i>
           </span>
-          <span>${escape(tweet.created_at)}</span>
+          <span>${escape(timeCalculator(tweet.created_at))}</span>
         </footer>
       </article>
       `
@@ -30,8 +41,9 @@ $(document).ready(() => {
   }
 
   function renderTweets(tweets) {
+    $('.tweet-container').empty();
     tweets.forEach(function(tweet) {
-        $('.tweet-container').prepend(createTweetElement(tweet));
+      $('.tweet-container').prepend(createTweetElement(tweet));
     });
   }
 

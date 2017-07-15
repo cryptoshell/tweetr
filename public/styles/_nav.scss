@@ -1,0 +1,43 @@
+#nav-bar {
+  background: #00a087;
+  color: #e8fdff;
+  float: left;
+  height: 80px;
+  padding: 0 2em 0 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .header {
+  font-size: 200%;
+  line-height: 80px;
+  padding: 0 0 0 10px;
+  }
+
+  .logo {
+    float: left;
+    height: 80px;
+    margin: 0 4px;
+    width: 80px;
+  }
+
+  button {
+    background: #eefffc;
+    border: 1px solid black;
+    border-radius: 10%;
+    color: #00a087;
+    float: right;
+    font-size: 117%;
+    height: 58px;
+    margin: 9px;
+    padding: 0;
+    width: 110px;
+
+    :hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
