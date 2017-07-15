@@ -7,7 +7,7 @@ $(document).ready(() => {
     $('form .counter').text(counter);
 
     if (counter < 0) {
-     count.addClass('warning'); // Counter font becomes red when 140 is exceeded
+      count.addClass('warning'); // Counter font becomes red when 140 is exceeded
     } else {
       count.removeClass('warning'); // If counter returns to <140, red font is removed
     }

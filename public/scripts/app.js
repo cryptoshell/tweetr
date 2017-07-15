@@ -7,15 +7,15 @@ $(document).ready(() => {
     return div.innerHTML;
   }
 
-// Calculates time in minutes, hours or days
+  // Calculates time in minutes, hours or days
   function timeCalculator(time) {
     let passedTime = Date.now() - time; // Date.now() returns milliseconds elapsed since 1 January 1970 00:00:00 UTC
     if (passedTime < 3600000) { // 1000ms * 60s * 60m = 3600000ms
-      return(Math.ceil(passedTime/60000) + " mins ago");
+      return(Math.ceil(passedTime / 60000) + " mins ago");
     } else if (passedTime < 86400000) { // 1000ms * 60s * 60m * 24 hrs = 86400000ms
       return (Math.ceil(passedTime / 3600000) + " hrs ago");
     } else {
-      return (Math.ceil(passedTime/86400000) + " days ago");
+      return (Math.ceil(passedTime / 86400000) + " days ago");
     }
   }
 
@@ -38,7 +38,7 @@ $(document).ready(() => {
           <span>${escape(timeCalculator(tweet.created_at))}</span>
         </footer>
       </article>
-      `
+      `;
     return $tweet;
   }
 
@@ -54,9 +54,9 @@ $(document).ready(() => {
   // Fetches tweets by calling renderTweets function
   function loadTweets() {
     $.getJSON('/tweets')
-    .done((tweets) => {
-      renderTweets(tweets);
-    })
+      .done((tweets) => {
+        renderTweets(tweets);
+      });
   }
 
   // Ajax used to refresh new tweets asynchronously on webpage
@@ -74,12 +74,12 @@ $(document).ready(() => {
         url: '/tweets',
         data: $(this).serialize()
       })
-      .done (()=> {
-        loadTweets();
-        $('textarea').val(''); // Reset textarea to blank after posting
-        $('form .counter').text(140); // Reset counter to 140 after posting
-        setTimeout(function () { alert("Your tweet has been posted successfully!");}, 400); // Alerts user of successful post
-      })
+        .done(()=> {
+          loadTweets();
+          $('textarea').val(''); // Reset textarea to blank after posting
+          $('form .counter').text(140); // Reset counter to 140 after posting
+          setTimeout(function () { alert("Your tweet has been posted successfully!"); }, 400); // Alerts user of successful post
+        });
     }
   }
 
