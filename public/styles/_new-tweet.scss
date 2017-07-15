@@ -1,6 +1,10 @@
+// Red font when character counter is negative
 .warning {
   color: red;
 }
+
+
+// Tweet Composer
 
 .new-tweet {
   background: #ddd;
@@ -45,6 +49,9 @@
     right: 10px;
   }
 }
+
+
+// Each posted tweet
 
 .tweet-container {
   padding: 8em 2em;

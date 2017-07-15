@@ -1,3 +1,5 @@
+// Fixed nav bar containing bird logo, app color, app name and a compose button
+
 #nav-bar {
   background: #00a087;
   color: #e8fdff;
@@ -27,17 +29,19 @@
     border: 1px solid black;
     border-radius: 10%;
     color: #00a087;
-    float: right;
     font-size: 117%;
     height: 58px;
     margin: 9px;
     padding: 0;
+    position: absolute;
+    right: 30px;
     width: 110px;
 
-    :hover {
-      background-color: white;
-      color: black;
-      cursor: pointer;
-    }
   }
+}
+
+#nav-bar button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }

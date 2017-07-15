@@ -1,14 +1,18 @@
+/* line 1, public/styles/_layout.scss */
 html {
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif; }
 
+/* line 5, public/styles/_layout.scss */
 *, *:before, *:after {
   box-sizing: inherit; }
 
+/* line 9, public/styles/_layout.scss */
 body {
   background-color: #eee;
   color: #244751; }
 
+/* line 16, public/styles/_layout.scss */
 main {
   background: white;
   margin: 0 auto;
@@ -16,6 +20,7 @@ main {
   padding-bottom: 100%;
   width: 450px; }
 
+/* line 3, public/styles/_nav.scss */
 #nav-bar {
   background: #00a087;
   color: #e8fdff;
@@ -26,34 +31,42 @@ main {
   top: 0;
   width: 100%;
   z-index: 1; }
+  /* line 14, public/styles/_nav.scss */
   #nav-bar .header {
     font-size: 200%;
     line-height: 80px;
     padding: 0 0 0 10px; }
+  /* line 20, public/styles/_nav.scss */
   #nav-bar .logo {
     float: left;
     height: 80px;
     margin: 0 4px;
     width: 80px; }
+  /* line 27, public/styles/_nav.scss */
   #nav-bar button {
     background: #eefffc;
     border: 1px solid black;
     border-radius: 10%;
     color: #00a087;
-    float: right;
     font-size: 117%;
     height: 58px;
     margin: 9px;
     padding: 0;
+    position: absolute;
+    right: 30px;
     width: 110px; }
-    #nav-bar button :hover {
-      background-color: white;
-      color: black;
-      cursor: pointer; }
 
+/* line 43, public/styles/_nav.scss */
+#nav-bar button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer; }
+
+/* line 2, public/styles/_new-tweet.scss */
 .warning {
   color: red; }
 
+/* line 9, public/styles/_new-tweet.scss */
 .new-tweet {
   background: #ddd;
   border: 2px solid #eee;
@@ -66,9 +79,11 @@ main {
   position: relative;
   top: 120px;
   width: 386px; }
+  /* line 22, public/styles/_new-tweet.scss */
   .new-tweet h2 {
     border-bottom: 1.5px solid;
     margin: 9px 0 18px; }
+  /* line 27, public/styles/_new-tweet.scss */
   .new-tweet input {
     background: #eee;
     font-size: 120%;
@@ -78,9 +93,11 @@ main {
     position: absolute;
     top: 113px;
     width: 60px; }
+  /* line 38, public/styles/_new-tweet.scss */
   .new-tweet textarea {
     height: 50px;
     width: 100%; }
+  /* line 43, public/styles/_new-tweet.scss */
   .new-tweet .counter {
     bottom: 8px;
     font-size: 80%;
@@ -89,8 +106,10 @@ main {
     position: absolute;
     right: 10px; }
 
+/* line 56, public/styles/_new-tweet.scss */
 .tweet-container {
   padding: 8em 2em; }
+  /* line 59, public/styles/_new-tweet.scss */
   .tweet-container .tweet {
     background: white;
     border: 2px solid #eee;
@@ -99,25 +118,30 @@ main {
     line-height: 30px;
     margin-bottom: 6px;
     width: 386px; }
+    /* line 68, public/styles/_new-tweet.scss */
     .tweet-container .tweet h3 {
       display: inline-block;
       font-size: 150%;
       margin: 5px 0 0 0;
       vertical-align: top; }
+    /* line 75, public/styles/_new-tweet.scss */
     .tweet-container .tweet p {
       display: inline-block;
       float: right;
       font-size: 80%;
       margin: 5px;
       padding: 0 2px 0 0; }
+    /* line 83, public/styles/_new-tweet.scss */
     .tweet-container .tweet article {
       border-bottom: 1px solid #d3d3d3;
       height: 80px;
       line-height: 120%;
       padding: 25px 12px; }
+    /* line 90, public/styles/_new-tweet.scss */
     .tweet-container .tweet header {
       background: #eee;
       height: 65px; }
+    /* line 95, public/styles/_new-tweet.scss */
     .tweet-container .tweet img {
       border-radius: 10%;
       display: inline-block;
@@ -125,19 +149,25 @@ main {
       margin: 6px;
       width: 50px;
       z-index: 1; }
+    /* line 104, public/styles/_new-tweet.scss */
     .tweet-container .tweet .icons {
       color: #73B1A9;
       float: right;
       padding: 0 7px 0 0;
       visibility: hidden; }
+    /* line 111, public/styles/_new-tweet.scss */
     .tweet-container .tweet footer {
       font-size: 70%;
       padding: 4px 0 0 6px; }
+      /* line 115, public/styles/_new-tweet.scss */
       .tweet-container .tweet footer span {
         float: left; }
+  /* line 120, public/styles/_new-tweet.scss */
   .tweet-container .tweet:hover {
     border: 0.5px solid #6e6e6e; }
+    /* line 123, public/styles/_new-tweet.scss */
     .tweet-container .tweet:hover .icons {
       visibility: visible; }
+    /* line 127, public/styles/_new-tweet.scss */
     .tweet-container .tweet:hover header {
       background: #d5d5d5; }

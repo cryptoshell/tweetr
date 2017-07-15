@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
-    "sass": "./node_modules/node-sass/bin/node-sass ./public/styles/styles.scss ./public/styles/styles.css -watch ./public/styles/styles.css"
+    "sass": "./node_modules/node-sass/bin/node-sass ./public/styles/styles.scss ./public/styles/styles.css --style compressed -watch ./public/styles/styles.css"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",

@@ -3,7 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
 
      <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
@@ -11,6 +11,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- App CSS -->
+    <!-- layout, nav, new-tweet, variables stylesheets combined into styles.css using Sass -->
     <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
 
     <!-- External JS -->
@@ -31,7 +32,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet"> <!-- Section to compose tweet -->
           <h2>Compose Tweet</h2>
           <form method="POST" action="/tweets/" id="make-tweet">
             <textarea name="text" placeholder="What are you humming about?"></textarea>
@@ -39,7 +40,7 @@
             <span class="counter">140</span>
           </form>
       </section>
-      <section class="tweet-container">
+      <section class="tweet-container"> <!-- Section to post tweets -->
       </section>
     </main>
   </body>
