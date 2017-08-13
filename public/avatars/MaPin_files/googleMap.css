@@ -1,9 +1,0 @@
-#map {
-  width: 95%;
-  top: 22px;
-  height: 600px;
-  background-color: #ddd;
-  z-index: 1000;
-  margin: 0 auto;
-  border: 2px black solid;
-}
