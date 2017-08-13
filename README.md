@@ -20,6 +20,7 @@ Responsive to both browser and mobile devices.
 
 - Body-parser
 - Chance
+- Dotenv
 - Express
 - Mongodb
 - Node 6.9.5
